@@ -1,0 +1,52 @@
+  <div class="grid-container">
+  <div class="cell">
+  
+    <!-- validation/error handling -->
+    <form class="login" data-abide novalidate>
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+    </div>
+
+    <h2 class="text-center">Login</h2>
+
+
+  <div class="grid-x grid-padding-x">
+
+    <!-- email validation -->
+    <div class="small-12 cell">
+      <label>Email
+    <input type="email" id="email" placeholder="email@email.edu" aria-describedby="exampleHelpText" required pattern="email">
+    <span class="form-error">
+      Please enter a valid email address.
+    </span>
+  </label>
+    </div>
+
+    <!-- password validation -->
+    <div class="small-12 cell">
+      <label>Password Required
+    <input type="password" id="password" placeholder="Enter Password" aria-describedby="exampleHelpText" required >
+    <span class="form-error">
+      Password is required.
+    </span>
+      </label>
+      <p class="help-text" id="exampleHelpText">Enter a password please.</p>
+    </div>
+    <div class="small-12 cell">
+      <label>Re-enter Password
+    <input type="password" placeholder="Re-enter Password" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
+    <span class="form-error">
+      Passwords must match!
+    </span>
+  </label>
+      <!-- <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p> -->
+    </div>
+  
+  </div>
+  <button class="button" href="#">Login</button>
+  <button class="button" href="#">Create an Account</button>
+  </form>
+</div>
+</div>   
+
+
