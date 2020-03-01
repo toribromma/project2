@@ -1,3 +1,59 @@
 .backgroundcolor {
    background-image: url(https://r-cf.bstatic.com/images/hotel/max1280x900/252/25267712.jpg);
 }
+
+.profile {
+    border: solid .01rem black;
+    padding: 1.6rem;
+    margin-top: 2rem;
+    background-color: rgba(104,239,141,.2);
+    color: white;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: 800;
+    background-color: rgba(147, 194, 216, .3);
+    font-size: larger;
+
+    
+}
+
+.switch-paddle {
+    height: 2rem;
+    border-radius: 5000px;
+}
+
+.switch-paddle::after {
+    border-radius: 5000px;
+}
+
+.switch {
+    display: inline;
+}
+
+.finance {
+    vertical-align: center;
+}
+
+.title-bar {
+   background-color: rgba(74, 205, 80, 1);
+}
+
+#exampleHelpText {
+   color: yellow;
+}
+
+.orbit-container {
+    min-height: 375px;
+    height:100%;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+}

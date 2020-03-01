@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Property Hunter</title>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css">
-    <title>Property Hunter</title>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.abide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.motion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.keyboard.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.timer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.imageLoader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.touch.min.js"></script>
     <link rel="stylesheet" href="../public/assets/css/style.css" type="text/css">
 </head>
 
@@ -19,10 +26,11 @@
     </div>
     <div class="title-bar-right">
       <ul class="menu align-right">
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Starred Listings</a></li>
-  <li><a href="#">Main</a></li>
-  <li><a href="#">?</a></li>
+  <li><a href="/profile">Profile</a></li>
+  <li><a href="/properties">Starred Listings</a></li>
+  <li><a href="/investment">Investments</a></li>
+  <li><a href="/search">Search</a></li>
+  <li><a href="/">Home</a></li>
 </ul>
     </div>
   </div>
@@ -31,6 +39,7 @@
 <body class="backgroundcolor">
     {{{ body }}}
     <script src="../public/assets/js/airbnb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.orbit.min.js"></script>
 </body>
 
 </html>

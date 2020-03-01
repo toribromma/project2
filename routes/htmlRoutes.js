@@ -8,6 +8,10 @@ module.exports = function (app) {
 
     // "practice" route loads "login.handlebars" page. Right now it shows the Cats! page (as a placeholder) but that's just a practice route to be deleted once the REAL login page is created.
     app.get("/", function (req, res) {
+        res.render("intro");
+    });
+
+    app.get("/login", function (req, res) {
         res.render("logIn");
     });
 
@@ -21,5 +25,16 @@ module.exports = function (app) {
         res.render("profile");
     });
 
+    app.get("/investment", function (req, res) {
+        res.render("investment");
+    });
+
+    app.get("/properties", function (req, res) {
+        res.render("properties");
+    });
+
+    app.get("/search", function (req, res) {
+        res.render("search");
+    });
 
 };

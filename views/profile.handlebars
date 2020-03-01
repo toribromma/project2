@@ -1,28 +1,4 @@
- <style>
-        .profile {
-            border: solid .01rem black;
-            padding: 1.6rem;
-            margin-top: 2rem;
-        }
-
-        .switch-paddle {
-            height: 2rem;
-            border-radius: 5000px;
-        }
-
-        .switch-paddle::after {
-            border-radius: 5000px;
-        }
-
-        .switch {
-            display: inline;
-        }
-
-        .finance {
-            vertical-align: center;
-        }
-    </style>
- <form>
+<form>
         <div class="grid-container profile">
             <div class="grid-x grid-padding-x">
                 <div class="medium-6 cell">
@@ -42,7 +18,7 @@
                         <input type="text" placeholder="Last">
                     </label>
                 </div>
-                <div class="medium-6 cell">
+                <div class="medium-6 cell switchfont">
                     <span>Financing</span>
                     <div class="finance"><span>CASH </span>
                         <div class="switch">
@@ -57,9 +33,9 @@
             </div>
             <div class="grid-x grid-padding-x">
                 <div class="medium-6 cell">
-                    <label>Email
+                    {{!-- <label>Email
                         <input type="text" placeholder="Email">
-                    </label>
+                    </label> --}}
                 </div>
                 <div class="medium-6 cell">
                     <label>Cities interested in
@@ -68,6 +44,6 @@
                 </div>
             </div>
             <button class="button">Save Profile</button>
-            <button class="button">Save Profile</button>
+            {{!-- <button class="button">Save Profile</button> --}}
         </div>
     </form>
