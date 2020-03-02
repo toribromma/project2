@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
       "password": "poop",
-      "database": "exampledb",
+      "database": "rentalDB",
       "host": "localhost",
       "dialect": "mysql"
     },
