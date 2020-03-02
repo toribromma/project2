@@ -6,15 +6,34 @@ var path = require("path");
 
 module.exports = function (app) {
 
-    // "practice" route loads "login.handlebars" page. Right now it shows the Cats! page (as a placeholder) but that's just a practice route to be deleted once the REAL login page is created.
+    // logIn route loads "login.handlebars" page.
     app.get("/", function (req, res) {
-        res.render("practice");
+        res.render("logIn");
     });
 
-    // signup route loads login page.
+    // signUp route loads signUp.handlebars to create a profile.
     app.get("/signup", function (req, res) {
-        res.render("signup");
+        res.render("signUp");
     });
 
+    // profile route loads profile.handlebars page. User profile info and preferences are here.
+    app.get("/profile", function (req, res) {
+        res.render("profile");
+    });
+
+    // search route loads search.handlebars page. Main page to find properties on the map or with search bar.
+    app.get("/search", function (req, res) {
+        res.render("search");
+    });
+
+    // properties route loads "properties.handlebars" page. Shows attributes of the selected property.
+    app.get("/properties/:id", function (req, res) {
+        res.render("properties");
+    });
+
+    //  investment loads "investment.handlebars" page. Shows investment statistics of the selected property.
+    app.get("/properties/investment/:id", function (req, res) {
+        res.render("investment");
+    });
 
 };
