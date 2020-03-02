@@ -3,39 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css" />
-    <title>Document</title>
-    <style>
-        .profile {
-            border: solid .01rem black;
-            padding: 1.6rem;
-            margin-top: 2rem;
-        }
+    <title>Property Hunter</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css">
 
-        .switch-paddle {
-            height: 2rem;
-            border-radius: 5000px;
-        }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.abide.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.motion.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.keyboard.min.js"></script>
 
-        .switch-paddle::after {
-            border-radius: 5000px;
-        }
-
-        .switch {
-            display: inline;
-        }
-
-        .finance {
-            vertical-align: center;
-        }
-    </style>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.timer.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.imageLoader.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.touch.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="../public/assets/css/style.css" type="text/css">
 </head>
 
 <body>
-
+    <div data-sticky-container>
+        <div class="title-bar" data-sticky data-options="marginTop:0;">
+            <div class="title-bar-left">
+                <span class="title-bar-title">Property Hunter</span>
+            </div>
+            <div class="title-bar-right">
+                <ul class="menu align-right">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Starred Listings</a></li>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">?</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <form>
-        <div class="grid-container profile">
+        <div class="grid-container formStyle">
             <div class="grid-x grid-padding-x">
                 <div class="medium-6 cell">
                     <label>First name
@@ -55,16 +64,9 @@
                     </label>
                 </div>
                 <div class="medium-6 cell">
-                    <span>Financing</span>
-                    <div class="finance"><span>CASH </span>
-                        <div class="switch">
-                            <input class="switch-input" id="financeSwitch" type="checkbox" name="financeSwitch">
-                            <label class="switch-paddle" for="financeSwitch">
-                                <span class="show-for-sr">Financing with Cash or Mortgage</span>
-                            </label>
-                        </div>
-                        <span> MORTGAGE</span>
-                    </div>
+                    <label>Cities interested in
+                        <input type="text" placeholder="Cities">
+                    </label>
                 </div>
             </div>
             <div class="grid-x grid-padding-x">
@@ -74,12 +76,14 @@
                     </label>
                 </div>
                 <div class="medium-6 cell">
-                    <label>Cities interested in
-                        <input type="text" placeholder="Cities">
+                    <label><span class="title">Financing</span><br>
+                        <input type="checkbox" id="finance1" name="finance1" value="Cash">
+                        <span for="finance1"> Cash</span><br>
+                        <input type="checkbox" id="finance2" name="finance2" value="Mortgage">
+                        <span for="finance2"> Mortgage</span><br>
                     </label>
                 </div>
             </div>
-            <button class="button">Save Profile</button>
             <button class="button">Save Profile</button>
         </div>
     </form>

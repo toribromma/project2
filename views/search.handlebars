@@ -1,23 +1,61 @@
-<div class="grid-container profile">
-    <h3 class="text-center">Search for Real Estate</h3>
-
-    <div class="grid-x grid-padding-x">
-
-        <div class="medium-6 cell">
-            <label>City
-                <input id="city" type="text" placeholder="Los Angeles">
-            </label>
+<form>
+    <div class="grid-container formStyle">
+        <div class="cell">
+            <h3 class="text-center">Search for a Property</h3>
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label><span class="title">City</span>
+                        <input type="text" placeholder="City">
+                    </label>
+                </div>
+                <div class="medium-6 cell">
+                    <label><span class="title">State</span>
+                        <input type="text" placeholder="State">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label><span class="title">Radius</span>
+                        <input type="text" placeholder="Radius">
+                    </label>
+                </div>
+                <div class="medium-6 cell">
+                    <div class="medium-6 cell">
+                        <label><span class="title">Bedrooms</span>
+                            <input type="text" placeholder="Bedrooms">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label><span class="title">Rental Strategy</span>
+                        <input type="text" placeholder="Rental Strategy">
+                    </label>
+                </div>
+                <div class="medium-6 cell">
+                    <label><span class="title">Bathrooms</span>
+                        <input type="text" placeholder="Bathrooms">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label><span class="title">Property Type</span><br>
+                        <input type="checkbox" id="option1" name="option1" value="Single">
+                        <span for="option1"> Single Family Residential</span><br>
+                        <input type="checkbox" id="option2" name="option2" value="Multi">
+                        <span for="option2"> Multi Family</span><br>
+                        <input type="checkbox" id="option3" name="option3" value="Condo">
+                        <span for="option3"> Condo</span><br>
+                        <input type="checkbox" id="option4" name="option4" value="Other">
+                        <span for="option4"> Other</span><br>
+                    </label>
+                </div>
+            </div>
+            <br>
+            <button class="button">Search</button>
         </div>
-        <div class="medium-6 cell">
-            <label>State
-                <input id="state" type="text" placeholder="California">
-            </label>
-        </div>
-        <button class="button" type="submit" id="searchBtn">Search</button>
-
-        <div class="listings"></div>
     </div>
-
-
-
-</div>
+</form>
