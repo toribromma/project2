@@ -1,14 +1,12 @@
 .backgroundcolor {
-   background-image: url(https://r-cf.bstatic.com/images/hotel/max1280x900/252/25267712.jpg);
+    background-image: url(https://r-cf.bstatic.com/images/hotel/max1280x900/252/25267712.jpg);
 }
 
-.profile {
-    border: solid .01rem black;
+.formStyle {
     padding: 1.6rem;
     margin-top: 2rem;
-    background-color: rgba(104,239,141,.2);
+    background-color: rgba(104, 239, 141, .8);
     color: white;
-    
 }
 
 body {
@@ -19,10 +17,12 @@ label {
     border-radius: 5px;
     color: whitesmoke;
     font-weight: 800;
-    background-color: rgba(147, 194, 216, .3);
+    background-color: rgba(147, 194, 216);
     font-size: larger;
+}
 
-    
+.title {
+    padding-left: 1rem;
 }
 
 .switch-paddle {
@@ -43,16 +43,16 @@ label {
 }
 
 .title-bar {
-   background-color: rgba(74, 205, 80, 1);
+    background-color: rgba(74, 205, 80, 1);
 }
 
 #exampleHelpText {
-   color: yellow;
+    color: red;
 }
 
 .orbit-container {
     min-height: 375px;
-    height:100%;
+    height: 100%;
     margin-top: 100px;
     margin-left: 300px;
     margin-right: 300px;

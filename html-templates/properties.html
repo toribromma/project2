@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Property Hunter</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.abide.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.motion.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.keyboard.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.timer.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.imageLoader.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.touch.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="../public/assets/css/style.css" type="text/css">
+    <style>
+        #map {
+            height: 700px;
+        }
+
+        .search-results {
+            max-height: 700px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<div data-sticky-container>
+    <div class="title-bar" data-sticky data-options="marginTop:0;">
+        <div class="title-bar-left">
+            <span class="title-bar-title">Property Hunter</span>
+        </div>
+        <div class="title-bar-right">
+            <ul class="menu align-right">
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/properties">Starred Listings</a></li>
+                <li><a href="/investment">Investments</a></li>
+                <li><a href="/search">Search</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<body class="backgroundcolor">
+    <div class="grid-x grid-padding-x align-top">
+        <div class="cell small-8">
+            <div id="map" class="map"></div>
+        </div>
+        <div class="cell small-4 search-results">
+            <div class="card" style="width: 450px;">
+                <div class="card-divider">
+                    <h4>Property address</h4>
+                </div>
+                <img src="../public/assets/images/deck.jpg">
+                <p>Property details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem, nobis
+                    optio ratione
+                    fugiat consequatur possimus ad atque molestiae quo!</p>
+            </div>
+            <div class="card" style="width: 450px;">
+                <div class="card-divider">
+                    <h4>Property address</h4>
+                </div>
+                <img src="../public/assets/images/deck.jpg">
+                <p>Property details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem, nobis
+                    optio ratione
+                    fugiat consequatur possimus ad atque molestiae quo!</p>
+            </div>
+            <div class="card" style="width: 450px;">
+                <div class="card-divider">
+                    <h4>Property address</h4>
+                </div>
+                <img src="../public/assets/images/deck.jpg">
+                <p>Property details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem, nobis
+                    optio ratione
+                    fugiat consequatur possimus ad atque molestiae quo!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.orbit.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script src="../public/assets/js/airbnb.js"></script>
+    <script src="../public/assets/js/properties.js"></script>
+    <!-- Custom Script -->
+    <script src="../public/assets/js/search.js" type="text/javascript"></script>
+</body>
+
+</html>
