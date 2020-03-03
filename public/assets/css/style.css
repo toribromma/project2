@@ -22,21 +22,21 @@ label {
     font-size: larger;
 }
 
-.switch-paddle {
-    height: 2rem;
-    border-radius: 5000px;
+.infoBox {
+    background-color: white;
+    padding: 1rem;
 }
 
-.switch-paddle::after {
-    border-radius: 5000px;
+.propChar {
+    line-height: .4rem;
 }
 
-.switch {
-    display: inline;
+.desc {
+    font-size: .8rem;
 }
 
-.finance {
-    vertical-align: center;
+.renStrat {
+    line-height: 1.2rem;
 }
 
 .title-bar {
