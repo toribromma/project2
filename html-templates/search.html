@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>Property Hunter</title>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
@@ -28,8 +27,7 @@
     <link rel="stylesheet" href="../public/assets/css/style.css" type="text/css">
 </head>
 
-<body>
-
+<body class="backgroundcolor">
     <div data-sticky-container>
         <div class="title-bar" data-sticky data-options="marginTop:0;">
             <div class="title-bar-left">
@@ -42,24 +40,6 @@
                     <li><a href="#">Main</a></li>
                     <li><a href="#">?</a></li>
                 </ul>
-
-            </div>
-        </div>
-    </div>
-    <form>
-        <div class="grid-container formStyle">
-            <div class="grid-x grid-padding-x">
-                <div class="medium-6 cell">
-                    <label>First name
-                        <input type="text" placeholder="First">
-                    </label>
-                </div>
-                <div class="medium-6 cell">
-                    <label>Budget
-                        <input type="text" placeholder="">
-                    </label>
-                </div>
-
             </div>
         </div>
     </div>
@@ -67,78 +47,71 @@
     <form>
         <div class="grid-container formStyle">
             <div class="cell">
-                <h3 class="text-center">Create your user profile</h3>
+                <h3 class="text-center">Search for a Property</h3>
                 <div class="grid-x grid-padding-x">
                     <div class="medium-6 cell">
-                        <label><span class="title">First Name</span>
-                            <input type="text" placeholder="First">
+                        <label><span class="title">City</span>
+                            <input type="text" placeholder="City">
                         </label>
                     </div>
                     <div class="medium-6 cell">
-                        <label><span class="title">Budget</span>
-                            <input type="text" placeholder="">
+                        <label><span class="title">State</span>
+                            <input type="text" placeholder="State">
                         </label>
                     </div>
                 </div>
-
-                <div class="medium-6 cell">
-                    <label>Cities interested in
-                        <input type="text" placeholder="Cities">
-                    </label>
-                </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-                <div class="medium-6 cell">
-                    <label>Email
-                        <input type="text" placeholder="Email">
-                    </label>
-                </div>
-                <div class="medium-6 cell">
-                    <label><span class="title">Financing</span><br>
-                        <input type="checkbox" id="finance1" name="finance1" value="Cash">
-                        <span for="finance1"> Cash</span><br>
-                        <input type="checkbox" id="finance2" name="finance2" value="Mortgage">
-                        <span for="finance2"> Mortgage</span><br>
-                    </label>
-
                 <div class="grid-x grid-padding-x">
                     <div class="medium-6 cell">
-                        <label><span class="title">Last Name</span>
-                            <input type="text" placeholder="Last">
+                        <label><span class="title">Radius</span>
+                            <input type="text" placeholder="Radius">
                         </label>
                     </div>
                     <div class="medium-6 cell">
-                        <label><span class="title">Financing</span></label>
-                        <div class="finance"><span>CASH </span>
-                            <div class="switch">
-                                <input class="switch-input" id="financeSwitch" type="checkbox" name="financeSwitch">
-                                <label class="switch-paddle" for="financeSwitch">
-                                    <span class="show-for-sr">Financing with Cash or Mortgage</span>
-                                </label>
-                            </div>
-                            <span> MORTGAGE</span>
+                        <div class="medium-6 cell">
+                            <label><span class="title">Bedrooms</span>
+                                <input type="text" placeholder="Bedrooms">
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div class="grid-x grid-padding-x">
                     <div class="medium-6 cell">
-                        <label><span class="title">Phone #</span>
-                            <input type="text" placeholder="Phone # (xxx)xxx-xxxx">
+                        <label><span class="title">Rental Strategy</span>
+                            <input type="text" placeholder="Rental Strategy">
                         </label>
                     </div>
                     <div class="medium-6 cell">
-                        <label><span class="title">Cities interested in</span>
-                            <input type="text" placeholder="Cities">
+                        <label><span class="title">Bathrooms</span>
+                            <input type="text" placeholder="Bathrooms">
                         </label>
                     </div>
-
                 </div>
-                <button class="button">Save Profile</button>
+                <div class="grid-x grid-padding-x">
+                    <div class="medium-6 cell">
+                        <label><span class="title">Property Type</span><br>
+                            <input type="checkbox" id="option1" name="option1" value="Single">
+                            <span for="option1"> Single Family Residential</span><br>
+                            <input type="checkbox" id="option2" name="option2" value="Multi">
+                            <span for="option2"> Multi Family</span><br>
+                            <input type="checkbox" id="option3" name="option3" value="Condo">
+                            <span for="option3"> Condo</span><br>
+                            <input type="checkbox" id="option4" name="option4" value="Other">
+                            <span for="option4"> Other</span><br>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <button class="button">Search</button>
             </div>
-
         </div>
     </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.orbit.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script src="../public/assets/js/airbnb.js"></script>
+    <script src="../public/assets/js/properties.js"></script>
+    <script src="../public/assets/js/search.js" type="text/javascript"></script>
 </body>
 
 </html>
