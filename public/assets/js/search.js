@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 
 /*
-Testing Code
+Testing Code for getListings()
 -----------------------------------------------------------------------------------
 $.ajax({
             // url: "https://api.edamam.com/search?q=steak&app_id=00c46abe&app_key=2e68c484c12e4ddcf68cd4c939cef6e0&from=0&to=3&Health=paleo",
@@ -55,7 +55,7 @@ $.ajax({
 
         */
 
-// // Function for handling what to render when there are no authors
+// // Function for handling what to render when there are no listings
 // function renderEmpty() {
 //     var alertDiv = $("<div>");
 //     alertDiv.addClass("alert alert-danger");
