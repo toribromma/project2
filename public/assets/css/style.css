@@ -3,7 +3,7 @@
 }
 
 .formStyle {
-    border: solid .01rem black;
+
     padding: 1.6rem;
     margin-top: 2rem;
     background-color: rgba(104, 239, 141, .8);
@@ -20,6 +20,10 @@ label {
     font-weight: 800;
     background-color: rgba(147, 194, 216);
     font-size: larger;
+
+.title {
+    padding-left: 1rem;
+
 }
 
 .infoBox {
@@ -44,7 +48,8 @@ label {
 }
 
 #exampleHelpText {
-    color: yellow;
+
+    color: red;
 }
 
 .orbit-container {
