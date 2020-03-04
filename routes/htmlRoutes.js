@@ -8,7 +8,7 @@ module.exports = function (app) {
 
     // "practice" route loads "login.handlebars" page. Right now it shows the Cats! page (as a placeholder) but that's just a practice route to be deleted once the REAL login page is created.
     app.get("/", function (req, res) {
-        res.render("intro");
+        res.render("index");
     });
 
     app.get("/login", function (req, res) {
