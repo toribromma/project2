@@ -3,6 +3,7 @@
 }
 
 .formStyle {
+
     padding: 1.6rem;
     margin-top: 2rem;
     background-color: rgba(104, 239, 141, .8);
@@ -19,27 +20,27 @@ label {
     font-weight: 800;
     background-color: rgba(147, 194, 216);
     font-size: larger;
-}
 
 .title {
     padding-left: 1rem;
+
 }
 
-.switch-paddle {
-    height: 2rem;
-    border-radius: 5000px;
+.infoBox {
+    background-color: white;
+    padding: 1rem;
 }
 
-.switch-paddle::after {
-    border-radius: 5000px;
+.propChar {
+    line-height: .4rem;
 }
 
-.switch {
-    display: inline;
+.desc {
+    font-size: .8rem;
 }
 
-.finance {
-    vertical-align: center;
+.renStrat {
+    line-height: 1.2rem;
 }
 
 .title-bar {
@@ -47,6 +48,7 @@ label {
 }
 
 #exampleHelpText {
+
     color: red;
 }
 

@@ -3,14 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery.js"></script>
 
+    <title>Property Hunter</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css">
 
-    <title>Property Hunter</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.abide.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.motion.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.keyboard.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.timer.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.imageLoader.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.touch.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
     <link rel="stylesheet" href="../public/assets/css/style.css" type="text/css">
 </head>
 
@@ -28,6 +42,24 @@
                     <li><a href="#">Main</a></li>
                     <li><a href="#">?</a></li>
                 </ul>
+
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="grid-container formStyle">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label>First name
+                        <input type="text" placeholder="First">
+                    </label>
+                </div>
+                <div class="medium-6 cell">
+                    <label>Budget
+                        <input type="text" placeholder="">
+                    </label>
+                </div>
+
             </div>
         </div>
     </div>
@@ -48,6 +80,27 @@
                         </label>
                     </div>
                 </div>
+
+                <div class="medium-6 cell">
+                    <label>Cities interested in
+                        <input type="text" placeholder="Cities">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label>Email
+                        <input type="text" placeholder="Email">
+                    </label>
+                </div>
+                <div class="medium-6 cell">
+                    <label><span class="title">Financing</span><br>
+                        <input type="checkbox" id="finance1" name="finance1" value="Cash">
+                        <span for="finance1"> Cash</span><br>
+                        <input type="checkbox" id="finance2" name="finance2" value="Mortgage">
+                        <span for="finance2"> Mortgage</span><br>
+                    </label>
+
                 <div class="grid-x grid-padding-x">
                     <div class="medium-6 cell">
                         <label><span class="title">Last Name</span>
@@ -78,9 +131,11 @@
                             <input type="text" placeholder="Cities">
                         </label>
                     </div>
+
                 </div>
                 <button class="button">Save Profile</button>
             </div>
+
         </div>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Property Hunter</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.orbit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.abide.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.motion.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.keyboard.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.timer.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.imageLoader.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.util.touch.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+    <link rel="stylesheet" href="../public/assets/css/style.css" type="text/css">
+</head>
+
+
+
+<body class="backgroundcolor">
+    <div data-sticky-container>
+        <div class="title-bar" data-sticky data-options="marginTop:0;">
+            <div class="title-bar-left">
+                <span class="title-bar-title">Property Hunter</span>
+            </div>
+            <div class="title-bar-right">
+                <ul class="menu align-right">
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/properties">Starred Listings</a></li>
+                    <li><a href="/investment">Investments</a></li>
+                    <li><a href="/search">Search</a></li>
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container full">
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-6">
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                    <div class="orbit-wrapper">
+                        <div class="orbit-controls">
+                            <button class="orbit-previous"><span class="show-for-sr">Previous
+                                    Slide</span>&#9664;&#xFE0E;</button>
+                            <button class="orbit-next"><span class="show-for-sr">Next
+                                    Slide</span>&#9654;&#xFE0E;</button>
+                        </div>
+                        <ul class="orbit-container">
+                            <li class="is-active orbit-slide">
+                                <figure class="orbit-figure">
+                                    <img class="orbit-image" src="../public/assets/images/deck.jpg" alt="Space">
+
+                                </figure>
+                            </li>
+                            <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                    <img class="orbit-image" src="../public/assets/images/livingroom.jpg" alt="Space">
+
+                                </figure>
+                            </li>
+                            <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                    <img class="orbit-image" src="../public/assets/images/property-search.jpg"
+                                        alt="Space">
+
+                                </figure>
+                            </li>
+                            <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                    <img class="orbit-image" src="../public/assets/images/landing.jpg" alt="Space">
+
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0">
+                            <span class="show-for-sr">First slide details.</span>
+                            <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+                        </button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                    </nav>
+                </div>
+            </div>
+            <div class="cell small-6 infoBox propChar">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-12">
+                        <hr>
+                        <h3 class="text-center">Property Characteristics</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-6">
+                        <h6>FACTS & FEATURES</h6>
+                        <hr>
+                        <span class="subheader desc">Property Type</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">Days on Market</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">Year Built</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">Lot Size</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">Price/sqft</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">HOA</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">Owner Occupied</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">MLS ID</span><span class="text-right"></span>
+                    </div>
+                    <div class="cell small-6">
+                        <h6>INTERIOR FEATURES</h6>
+                        <hr>
+                        <span class="subheader desc">Number of Bedrooms</span><span class="text-right"></span>
+                        <hr>
+                        <span class="subheader desc">Number of Bathrooms</span><span class="text-right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-6 infoBox">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-12">
+                        <hr>
+                        <h3 class="text-center">Rental Strategy</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-4">
+                    </div>
+                    <div class="cell small-4">
+                        <p class="subheader text-center">Traditional</p>
+                    </div>
+                    <div class="cell small-4">
+                        <p class="subheader text-center">AIRBNB</p>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-4 renStrat">
+                        <span>COMPARABLE RENTAL INCOME</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4">
+                        <input type="text" placeholder="$">
+                        <hr>
+                    </div>
+                    <div class="cell small-4">
+                        <input type="text" placeholder="$">
+                        <hr>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-4 renStrat">
+                        <span>MONTHLY EXPENSES</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">$3,166</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">$3,070</span>
+                        <hr>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-4 renStrat">
+                        <span>CASH FLOW</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">$4,057</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">$2,038</span>
+                        <hr>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-4 renStrat">
+                        <span>CASH ON CASH RETURN</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">10.38%</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">5.21%</span>
+                        <hr>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-4 renStrat">
+                        <span>CAP RATE</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">10.38%</span>
+                        <hr>
+                    </div>
+                    <div class="cell small-4 renStrat">
+                        <span class="text-center">5.21%</span>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="cell small-6 infoBox renStrat">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-12">
+                        <hr>
+                        <h3 class="text-center">Expenses</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-6">
+                        <span class="subheader">ONE TIME START UP COSTS</span>
+                        <hr>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-6">
+                                <span>INSPECTIONS</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-6">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-6">
+                                <span>TOTAL REPAIR COSTS</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-6">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-6">
+                                <span>FURNITURE & APPLIANCES</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-6">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-6">
+                                <span>CLOSING COSTS</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-6">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-6">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span class="subheader">MO. EXPS.</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <span class="subheader">TRADITIONAL</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <span class="subheader">AIRBNB</span>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>INSURANCE</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>UTILITIES</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>PROP. MAN.</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>PROP. MAIN.</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>PROP. TAX</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>HOA DUES</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>RENTAL INC. TAXES</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-4">
+                                <span>CLEANING FEES</span>
+                                <hr>
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                            <div class="cell small-4">
+                                <input type="text" placeholder="$">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/plugins/foundation.orbit.min.js"></script>
+    <script src="../public/assets/js/airbnb.js"></script>
+    <!-- Custom Script -->
+    <script src="../../public/assets/js/search.js" type="text/javascript"></script>
+</body>
+
+</html>
