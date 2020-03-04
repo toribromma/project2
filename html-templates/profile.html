@@ -46,51 +46,42 @@
             </div>
         </div>
     </div>
+
     <form>
         <div class="grid-container formStyle">
             <div class="grid-x grid-padding-x">
+                <div class="cell medium-12">
+                    <h3 class="text-center">Create your user profile</h3>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
                 <div class="medium-6 cell">
-                    <label>First name
+                    <label><span class="title">First Name</span>
                         <input type="text" placeholder="First">
                     </label>
                 </div>
                 <div class="medium-6 cell">
-                    <label>Budget
+                    <label><span class="title">Budget</span>
                         <input type="text" placeholder="">
-                    </label>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <form>
-        <div class="grid-container formStyle">
-            <div class="cell">
-                <h3 class="text-center">Create your user profile</h3>
-                <div class="grid-x grid-padding-x">
-                    <div class="medium-6 cell">
-                        <label><span class="title">First Name</span>
-                            <input type="text" placeholder="First">
-                        </label>
-                    </div>
-                    <div class="medium-6 cell">
-                        <label><span class="title">Budget</span>
-                            <input type="text" placeholder="">
-                        </label>
-                    </div>
-                </div>
-
-                <div class="medium-6 cell">
-                    <label>Cities interested in
-                        <input type="text" placeholder="Cities">
                     </label>
                 </div>
             </div>
             <div class="grid-x grid-padding-x">
                 <div class="medium-6 cell">
-                    <label>Email
+                    <label><span class="title">Last Name</span>
+                        <input type="text" placeholder="Last">
+                    </label>
+                </div>
+                <div class="medium-6 cell">
+                    <label><span class="title">Email</span>
                         <input type="text" placeholder="Email">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label><span class="title">Cities Interested In</span>
+                        <input type="text" placeholder="Cities">
                     </label>
                 </div>
                 <div class="medium-6 cell">
@@ -100,42 +91,16 @@
                         <input type="checkbox" id="finance2" name="finance2" value="Mortgage">
                         <span for="finance2"> Mortgage</span><br>
                     </label>
-
-                <div class="grid-x grid-padding-x">
-                    <div class="medium-6 cell">
-                        <label><span class="title">Last Name</span>
-                            <input type="text" placeholder="Last">
-                        </label>
-                    </div>
-                    <div class="medium-6 cell">
-                        <label><span class="title">Financing</span></label>
-                        <div class="finance"><span>CASH </span>
-                            <div class="switch">
-                                <input class="switch-input" id="financeSwitch" type="checkbox" name="financeSwitch">
-                                <label class="switch-paddle" for="financeSwitch">
-                                    <span class="show-for-sr">Financing with Cash or Mortgage</span>
-                                </label>
-                            </div>
-                            <span> MORTGAGE</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="grid-x grid-padding-x">
-                    <div class="medium-6 cell">
-                        <label><span class="title">Phone #</span>
-                            <input type="text" placeholder="Phone # (xxx)xxx-xxxx">
-                        </label>
-                    </div>
-                    <div class="medium-6 cell">
-                        <label><span class="title">Cities interested in</span>
-                            <input type="text" placeholder="Cities">
-                        </label>
-                    </div>
-
-                </div>
-                <button class="button">Save Profile</button>
             </div>
-
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label><span class="title">Phone #</span>
+                        <input type="text" placeholder="Phone # (xxx)xxx-xxxx">
+                    </label>
+                </div>
+            </div>
+            <button class="button">Save Profile</button>
         </div>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
