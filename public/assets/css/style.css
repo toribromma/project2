@@ -5,7 +5,7 @@
 .formStyle {
     padding: 1.6rem;
     margin-top: 2rem;
-    background-color: rgba(104, 239, 141, .8);
+    background-color: rgba(104, 239, 141, .5);
     color: white;
 }
 
@@ -22,7 +22,7 @@ label {
     border-radius: 5px;
     color: whitesmoke;
     font-weight: 800;
-    background-color: rgba(147, 194, 216);
+    background-color: rgba(147, 194, 216, .8);
     font-size: larger;
 }
 
@@ -53,6 +53,7 @@ label {
 
 #exampleHelpText {
     color: red;
+    font-size: 1.2rem;
 }
 
 .investCarousel {
