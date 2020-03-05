@@ -24,18 +24,36 @@ $(document).ready(function() {
 
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
   function loginUser(email, password) {
-    $.put("/api/login", {
-      email: email,
-      password: password
-    })
-      .then(function() {
-        window.location.replace("/search");
-        // If there's an error, log the error
+    // $.put("/api/login", {
+    //   email: email,
+    //   password: password
+    // })
+    //   .then(function() {
+    //     window.location.replace("/search");
+    //     // If there's an error, log the error
+    //   })
+    //   .catch(function(err) {
+    //     console.log(err);
+    //   });
+
+      $.ajax({
+        method: "PUT",
+        url: "/api/signup",
+        data: {
+          email: email,
+        password: password
+        }
       })
-      .catch(function(err) {
-        console.log(err);
-      });
-  }
+        .then(function() {
+          window.location.href = "/search";
+          // If there's an error, log the error
+        })
+        .catch(function(err) {
+          console.log(err);
+        });
+    }
+  
+
 });
 
 
