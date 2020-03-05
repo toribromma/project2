@@ -5,12 +5,20 @@
 .formStyle {
     padding: 1.6rem;
     margin-top: 2rem;
-    background-color: rgba(104, 239, 141, .5);
+    background-color: rgba(104, 239, 141, .6);
     color: white;
+    border-radius: 25px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    margin-left: 1rem;
+    margin-top: .5rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .indexCarousel {
