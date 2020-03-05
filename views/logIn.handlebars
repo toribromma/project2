@@ -15,11 +15,12 @@
         <!-- email validation -->
         <div class="small-12 cell">
           <label>Email
-            <input type="email" id="email-input" placeholder="email@email.edu" aria-describedby="exampleHelpText"
-              required pattern="email">
-            <span class="form-error">
+            <input type="email" id="email-input" placeholder="email@email.edu" aria-describedby="exampleHelpText" required
+              pattern="email">
+            {{!-- <span class="form-error">
+
               Please enter a valid email address.
-            </span>
+            </span> --}}
           </label>
         </div>
 
@@ -28,9 +29,9 @@
           <label>Password Required
             <input type="password" id="password-input" placeholder="Enter Password" aria-describedby="exampleHelpText"
               required>
-            <span class="form-error">
+            {{!-- <span class="form-error">
               Password is required.
-            </span>
+            </span> --}}
           </label>
           <h4 class="help-text" id="exampleHelpText">Enter a password please.</h4>
         </div>
@@ -38,9 +39,9 @@
           <label>Re-enter Password
             <input type="password" placeholder="Re-enter Password" aria-describedby="exampleHelpText2" required
               pattern="alpha_numeric" data-equalto="password">
-            <span class="form-error">
+            {{!-- <span class="form-error">
               Passwords must match!
-            </span>
+            </span> --}}
           </label>
           <!-- <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p> -->
         </div>
