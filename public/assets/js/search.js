@@ -4,10 +4,8 @@ $(document).ready(function () {
     let stateInput = $("state");
     let listingContainer = $("listings")
 
-
     // When user clicks Search button this will take the City & State to run API call.
     $(document).on("click", "#searchBtn", getListings);
-
 
     function getListings(event) {
         event.preventDefault();
