@@ -14,9 +14,12 @@ $(document).ready(function () {
         // Need to set up the api call with the api key in the header. Not sure how yet. Here is where I left off. The URL that is not commented is a placeholder. It works. The one below that IS commented out is the one we want to use.
         $.ajax({
             type: "GET",
-            url: "https://api.mashvisor.com/v1.1/client/city/properties/CA/Los%20Angeles",
+            url: "https://api.mashvisor.com/v1.1/client/city/neighborhoods/CA/Brea",
             xhrFields: {withCredentials: false},
-            headers: { "x-api-key": "0b3c70fe-d5b1-438e-8e6f-1feb2bcaf143" },
+            headers: { 
+                "x-api-key": "0b3c70fe-d5b1-438e-8e6f-1feb2bcaf143",
+                "Access-Control-Allow-Headers": "*"
+             },
             dataType: "json",
             data: {},
             success: function (result) {
