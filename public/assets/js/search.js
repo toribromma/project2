@@ -1,34 +1,30 @@
 $(document).ready(function () {
-    require('dotenv').config()
+
     let cityInput = $("city");
     let stateInput = $("state");
     let listingContainer = $("listings")
 
-
     // When user clicks Search button this will take the City & State to run API call.
     $(document).on("click", "#searchBtn", getListings);
-
 
     function getListings(event) {
         event.preventDefault();
         console.log("Search button was clicked!")
         // Need to set up the api call with the api key in the header. Not sure how yet. Here is where I left off. The URL that is not commented is a placeholder. It works. The one below that IS commented out is the one we want to use.
-        $.ajax({
-            type: "GET",
-            url: "https://api.mashvisor.com/v1.1/client/city/properties/CA/Los%20Angeles",
-            xhrFields: { withCredentials: false },
-            headers: { "x-api-key": process.env.API_KEY },
-            dataType: "json",
-            data: {},
-            success: function (result) {
-                console.log(result);
-            },
-            error: function () {
-                console.log("error");
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://mashvisor-api.p.rapidapi.com/city/properties/GA/Atlanta",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "mashvisor-api.p.rapidapi.com",
+                "x-rapidapi-key": process.env.API_KEY
             }
-        }).then(function (response) {
+        }
+        
+        $.ajax(settings).done(function (response) {
             console.log(response);
-        })
+        });
     }
 
 
