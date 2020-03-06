@@ -4,7 +4,6 @@ $(document).ready(function () {
     let stateInput = $("state");
     let listingContainer = $("listings")
 
-    $('.dropdown-trigger').dropdown();
     // When user clicks Search button this will take the City & State to run API call.
     $(document).on("click", "#searchBtn", getListings);
 
