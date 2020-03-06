@@ -25,6 +25,9 @@
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cinzel|Courgette|Quattrocento+Sans|Sawarabi+Mincho&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../../public/assets/css/style.css" type="text/css">
 </head>
 
@@ -32,16 +35,17 @@
   <div data-sticky-container>
     <div class="title-bar" data-sticky data-options="marginTop:0;">
       <div class="title-bar-left">
-        <h5 class="title-bar-title">Property Hunter</h5><img class="logo" src="../../public/assets/images/arrow.png"
-          alt="bow icon">
+        <h5 class="title-bar-title title">Property Hunter</h5><img class="logo"
+          src="../../public/assets/images/arrow.png" alt="bow icon">
       </div>
       <div class="title-bar-right">
         <ul class="menu align-right">
-          <li><a href="/profile">Profile</a></li>
-          <li><a href="/properties">Starred Listings</a></li>
-          <li><a href="/investment">Investments</a></li>
-          <li><a href="/search">Search</a></li>
-          <li><a href="/">Home</a></li>
+          <li><a class="headLink" href="/profile">Profile</a></li>
+          <li><a class="headLink" href="/properties">Starred Listings</a></li>
+          <li><a class="headLink" href="/investment">Investments</a></li>
+          <li><a class="headLink" href="/search">Search</a></li>
+          <li><a class="headLink" href="/">Home</a></li>
+          <li><a id="logout" class="headLink hide" href="/">Logout</a></li>
         </ul>
       </div>
     </div>
