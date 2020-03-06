@@ -30,12 +30,13 @@ module.exports = function (app) {
         res.status(401).json(err);
       });
   });
-  app.post("/api/profile"), function (req, res) {
+
+  app.post("/api/profile", function (req, res) {
     db.profile.create({
-      first_name: req.body.first,
-      last_name: req.body.last,
+      firstName: req.body.first,
+      lastName: req.body.last,
       budget: req.body.budget,
-      cities_interested: req.body.cities,
+      citiesInterested: req.body.cities,
       phone: req.body.phone,
       email: req.body.email
     })
@@ -45,7 +46,7 @@ module.exports = function (app) {
       .catch(function (err) {
         res.status(401).json(err);
       });
-  }
+  });
 
   // Route for logging user out
   app.get("/logout", function (req, res) {
