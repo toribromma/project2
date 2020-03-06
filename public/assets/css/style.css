@@ -34,8 +34,28 @@ label {
     font-size: larger;
 }
 
-.title {
-    padding-left: 1rem;
+ul {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropStyle {
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: 800;
+    background-color: rgba(147, 194, 216, .8);
+    font-size: larger;
+    width: 34rem;
+    height: 5rem;
+}
+
+.propType {
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: 800;
+    background-color: rgba(147, 194, 216, .8);
+    font-size: larger;
 }
 
 .infoBox {

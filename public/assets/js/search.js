@@ -1,13 +1,12 @@
 $(document).ready(function () {
-    require('dotenv').config()
+    // require('dotenv').config()
     let cityInput = $("city");
     let stateInput = $("state");
     let listingContainer = $("listings")
 
-
+    $('select').formSelect();
     // When user clicks Search button this will take the City & State to run API call.
     $(document).on("click", "#searchBtn", getListings);
-
 
     function getListings(event) {
         event.preventDefault();
