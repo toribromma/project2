@@ -6,3 +6,10 @@ $('.title-bar').on('sticky.zf.stuckto:top', function(){
 }).on('sticky.zf.unstuckfrom:top', function(){
   $(this).removeClass('shrink');
 })
+
+
+
+$("#logout").on("click", function(event) {
+  event.preventDefault();
+  $("#logout").addClass("hide");
+})
