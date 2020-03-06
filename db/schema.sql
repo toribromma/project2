@@ -23,6 +23,7 @@ CREATE TABLE users
     (
         id INT
         AUTO_INCREMENT NOT NULL,
+        idProperty INT,
     theState VARCHAR
         (255) NOT NULL,
     theAddress VARCHAR
