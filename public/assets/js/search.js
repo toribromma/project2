@@ -9,7 +9,7 @@ $(document).ready(function () {
     function getListings(event) {
         event.preventDefault();
         console.log("Search button was clicked?");
-        var dataInput = {state: stateInput[0].value, city: cityInput[0].value}
+        var dataInput = { state: stateInput[0].value, city: cityInput[0].value }
         console.log(dataInput);
 
         $(".map").removeClass("hide");
@@ -54,7 +54,7 @@ $(document).ready(function () {
     function createNewRow(property) {
         var newListCard = $("<div id='grabId'>");
         newListCard.addClass("card");
-        //newListCard.addId("grabId");
+        newListCard.attr("data-propID", property.id)
         newListCard.css({ width: "450px" });
         var newDivider = $("<div>");
         newDivider.addClass("card-divider");
@@ -131,11 +131,3 @@ $(document).ready(function () {
     }
 
 })
-
-
-
-
-
-
-
-

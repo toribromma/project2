@@ -10,13 +10,14 @@ $(document).ready(function () {
 
     $("#profileSave").on("click", function (event) {
         event.preventDefault();
+        $("#profileDiv").empty();
         var Profile = {
             firstName: firstName.val().trim(),
             lastName: lastName.val().trim(),
             budget: budget.val().trim(),
             phone: phone.val().trim(), 
         };
-
+        console.log("hi");
         console.log(Profile);
 
 $.post("/api/profile", Profile)
@@ -32,6 +33,8 @@ $.post("/api/profile", Profile)
     });
 
 $.get("/api/profile", function(data) {
+
+    
 
 if (data.length !== 0) {
 
