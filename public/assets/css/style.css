@@ -106,8 +106,12 @@ ul {
     height: 700px;
 }
 
-.search-results {
+.listings-container {
     max-height: 700px;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+.results-img {
+    height: 350px;
 }
