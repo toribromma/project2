@@ -21,7 +21,7 @@ $(document).ready(function () {
                 "x-rapidapi-key": process.env.API_KEY
             }
         }
-        
+
         $.ajax(settings).done(function (response) {
             console.log(response);
         });
