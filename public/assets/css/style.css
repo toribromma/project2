@@ -29,7 +29,7 @@ body {
     display: none;
 }
 
-.pageHead {
+.profileHead {
     font-family: 'Alfa Slab One', cursive;
 }
 
@@ -106,12 +106,8 @@ ul {
     height: 700px;
 }
 
-.listings-container {
+.search-results {
     max-height: 700px;
     overflow: scroll;
     overflow-x: hidden;
-}
-
-.results-img {
-    height: 350px;
 }

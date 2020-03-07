@@ -32,11 +32,32 @@
 </head>
 
 <body class="backgroundcolor">
-
+  <div data-sticky-container>
+    <div class="title-bar" data-sticky data-options="marginTop:0;">
+      <div class="title-bar-left">
+        <h5 class="title-bar-title title">Property Hunter</h5><img class="logo"
+          src="../../public/assets/images/arrow.png" alt="bow icon">
+      </div>
+      <div class="title-bar-right">
+        <ul class="menu align-right">
+          <li><a class="headLink" href="/profile">Profile</a></li>
+          <li><a class="headLink" href="/properties">Starred Listings</a></li>
+          <li><a class="headLink" href="/investment">Investments</a></li>
+          <li><a class="headLink" href="/search">Search</a></li>
+          <li><a class="headLink" href="/">Home</a></li>
+          <li><a id="logout" class="headLink hide" href="/">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   {{{ body }}}
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
   <script src="../../public/assets/js/airbnb.js"></script>
+  <script src="../../public/assets/js/properties.js"></script>
   <script src="../../public/assets/js/search.js" type="text/javascript"></script>
   <script src="../../public/assets/js/signup.js" type="text/javascript"></script>
   <script src="../../public/assets/js/login.js" type="text/javascript"></script>
