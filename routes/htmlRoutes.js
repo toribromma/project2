@@ -25,7 +25,7 @@ module.exports = function (app) {
         if (req.user) {
             res.redirect("search");
           }
-          res.render("signup")
+          res.render("signUp")
         });
 
      // signup route loads login page.

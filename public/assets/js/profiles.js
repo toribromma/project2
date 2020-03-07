@@ -19,8 +19,7 @@ $(document).ready(function () {
         };
     });
 
-};
+});
 
 
 
-}
