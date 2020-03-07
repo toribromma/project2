@@ -111,3 +111,7 @@ ul {
     overflow: scroll;
     overflow-x: hidden;
 }
+
+.results-img {
+    height: 350px;
+}

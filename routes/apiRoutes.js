@@ -33,12 +33,10 @@ module.exports = function (app) {
 
   app.post("/api/profile", function (req, res) {
     db.profile.create({
-      firstName: req.body.first,
-      lastName: req.body.last,
-      budget: req.body.budget,
-      citiesInterested: req.body.cities,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       phone: req.body.phone,
-      email: req.body.email
+      email: req.body.profileEmail
     })
       .then(function () {
         res.redirect(307, "/api/search");
