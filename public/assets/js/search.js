@@ -1,6 +1,7 @@
 $(document).ready(function () {
     let cityInput = $("#city");
     let stateInput = $("#state");
+    let idInput = $("#grabId");
     let listingContainer = $(".listings-container")
     var listings;
     // When user clicks Search button this will take the City & State to run API call.
@@ -25,6 +26,22 @@ $(document).ready(function () {
         });
     };
 
+    
+    $(document).on("click", "#grabId", getTheId);
+    function getTheId(event) {
+        event.preventDefault();
+        console.log("Grab ID button was clicked!");
+        var takeId = {propertyId: idInput}
+        console.log(takeId);
+
+        // Transfer the var takeId to the server side
+        $.get("/api/search", takeId, function (idData) {
+            console.log(idData)
+            listingId = idData;
+        })
+    }
+    
+
     function initializeListings() {
         listingContainer.empty();
         var listingsToAdd = [];
@@ -35,8 +52,9 @@ $(document).ready(function () {
     };
 
     function createNewRow(property) {
-        var newListCard = $("<div>");
+        var newListCard = $("<div id='grabId'>");
         newListCard.addClass("card");
+        //newListCard.addId("grabId");
         newListCard.css({ width: "450px" });
         var newDivider = $("<div>");
         newDivider.addClass("card-divider");
