@@ -22,7 +22,7 @@ module.exports = function (app) {
             }
         }).then(function (result) {
             res.json(result.data.content.properties);
-            console.log(result.data.content.properties[0].neighborhood);
+            // console.log(result.data.content.properties[0].neighborhood);
             // console.log(``)
         })
 
