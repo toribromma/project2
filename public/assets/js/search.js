@@ -5,6 +5,15 @@ $(document).ready(function () {
     var listingContainer = $(".listings-container");
     var listings;
 
+    // Variable to be called to add/change map elements that points to the map div
+    var map = L.map('map');
+    // Function to load map tiles
+    L.tileLayer("https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png", {
+        attribution:
+            '&copy; Openstreetmap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 18
+    }).addTo(map);
+
     // When user clicks Search button this will take the City & State to run API call.
     $(document).on("click", "#searchBtn", getListings);
 
