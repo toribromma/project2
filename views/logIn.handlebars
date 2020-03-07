@@ -1,70 +1,37 @@
-<div data-sticky-container>
-  <div class="title-bar" data-sticky data-options="marginTop:0;">
-    <div class="title-bar-left">
-      <h5 class="title-bar-title title">Property Hunter</h5><img class="logo" src="../../public/assets/images/arrow.png"
-        alt="bow icon">
-    </div>
-    <div class="title-bar-right">
-      <ul class="menu align-right">
-        <li><a class="headLink" href="/profile">Profile</a></li>
-        <li><a class="headLink" href="/investment">Investments</a></li>
-        <li><a class="headLink" href="/search">Search</a></li>
-        <li><a class="headLink" href="/">Home</a></li>
-      </ul>
+<form class="text-center formStyle login" data-abide novalidate>
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12">
+        <label>Email Require
+          <input type="email" id="email" placeholder="tori@uci.edu" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="email">
+          <span class="form-error">
+            Yo, you had better fill this out, it's required.
+          </span>
+        </label>
+      <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+      </div>
+       <div class="cell small-12">
+        <label>Password Required
+          <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="example1Hint2" aria-errormessage="example1Error2" required >
+          <span class="form-error">
+            I'm required!
+          </span>
+        </label>
+        <p class="help-text" id="example1Hint2">Enter a password please.</p>
+      </div>
+      <div class="cell small-12">
+        <label>Re-enter Password
+          <input type="password" placeholder="yeti4preZ" aria-describedby="example1Hint3" aria-errormessage="example1Error3" required pattern="alpha_numeric" data-equalto="password">
+          <span class="form-error">
+            Hey, passwords are supposed to match!
+          </span>
+        </label>
+        <p class="help-text" id="example1Hint3">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="grid-container text-center formStyle">
-  <div class="cell">
-
-    <!-- validation/error handling -->
-    <form class="login" data-abide novalidate>
-      <div data-abide-error class="alert callout" style="display: none;">
-        <p><i class="fi-alert"></i> There are some errors in your form.</p>
-      </div>
-
-      <h2 class="text-center pageHead">Login</h2>
-
-
-      <div class="grid-x grid-padding-x">
-
-        <!-- email validation -->
-        <div class="small-12 cell">
-          <label>Email
-            <input class="text-center" type="email" id="email-input" placeholder="email@email.edu"
-              aria-describedby="exampleHelpText" required pattern="email">
-            {{!-- <span class="form-error">
-
-              Please enter a valid email address.
-            </span> --}}
-          </label>
-        </div>
-
-        <!-- password validation -->
-        <div class="small-12 cell">
-          <label>Password Required
-            <input class="text-center" type="password" id="password-input" placeholder="Enter Password"
-              aria-describedby="exampleHelpText" required>
-            {{!-- <span class="form-error">
-              Password is required.
-            </span> --}}
-          </label>
-          <h4 class="help-text" id="exampleHelpText">Enter a password please.</h4>
-        </div>
-        <div class="small-12 cell">
-          <label>Re-enter Password
-            <input class="text-center" type="password" placeholder="Re-enter Password"
-              aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
-            {{!-- <span class="form-error">
-              Passwords must match!
-            </span> --}}
-          </label>
-          <!-- <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p> -->
-        </div>
-        <a class="button" type="submit">Log In</a>
-
-      </div>
-    </form>
-  </div>
-</div>
+   <a class="button" type="submit">Log In</a>
+</form>
