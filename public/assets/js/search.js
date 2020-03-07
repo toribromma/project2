@@ -1,33 +1,17 @@
 $(document).ready(function () {
-
     let cityInput = $("city");
     let stateInput = $("state");
     let listingContainer = $("listings")
-
     // When user clicks Search button this will take the City & State to run API call.
     $(document).on("click", "#searchBtn", getListings);
-
     function getListings(event) {
         event.preventDefault();
         console.log("Search button was clicked!")
         // Need to set up the api call with the api key in the header. Not sure how yet. Here is where I left off. The URL that is not commented is a placeholder. It works. The one below that IS commented out is the one we want to use.
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://mashvisor-api.p.rapidapi.com/city/properties/GA/Atlanta",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "mashvisor-api.p.rapidapi.com",
-                "x-rapidapi-key": process.env.API_KEY
-            }
-        }
-
-        $.ajax(settings).done(function (response) {
-            console.log(response);
+        $.get("/api/search", "any", function (data) {
+            console.log(data)
         });
     }
-
-
 })
 
 
