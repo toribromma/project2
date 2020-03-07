@@ -33,7 +33,11 @@ module.exports = function(app) {
         });
       });
 
-      
+        // DELETE route for deleting todos. We can get the id of the todo we want to delete from
+  // req.params.id
+  app.delete("/api/profile/:id", function(req, res) {
+
+  });
 
 
 }
