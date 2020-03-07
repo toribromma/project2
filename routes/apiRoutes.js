@@ -31,23 +31,6 @@ module.exports = function (app) {
       });
   });
 
-  app.post("/api/profile", function (req, res) {
-    db.profile.create({
-      firstName: req.body.first,
-      lastName: req.body.last,
-      budget: req.body.budget,
-      citiesInterested: req.body.cities,
-      phone: req.body.phone,
-      email: req.body.email
-    })
-      .then(function () {
-        res.redirect(307, "/api/search");
-      })
-      .catch(function (err) {
-        res.status(401).json(err);
-      });
-  });
-
   // Route for logging user out
   app.get("/logout", function (req, res) {
     req.logout();
