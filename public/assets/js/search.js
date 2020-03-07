@@ -27,19 +27,19 @@ $(document).ready(function () {
     };
 
     
-    $(document).on("click", "#grabId", getTheId);
-    function getTheId(event) {
-        event.preventDefault();
-        console.log("Grab ID button was clicked!");
-        var takeId = {propertyId: idInput}
-        console.log(takeId);
+    // $(document).on("click", "#grabId", getTheId);
+    // function getTheId(event) {
+    //     event.preventDefault();
+    //     console.log("Grab ID button was clicked!");
+    //     var takeId = {propertyId: idInput}
+    //     console.log(takeId);
 
-        // Transfer the var takeId to the server side
-        $.get("/api/search", takeId, function (idData) {
-            console.log(idData)
-            listingId = idData;
-        })
-    }
+    //     // Transfer the var takeId to the server side
+    //     $.get("/api/search", takeId, function (idData) {
+    //         console.log(idData)
+    //         listingId = idData;
+    //     })
+    // }
     
 
     function initializeListings() {
