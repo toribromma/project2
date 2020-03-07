@@ -1,43 +1,35 @@
+<div data-sticky-container>
+    <div class="title-bar" data-sticky data-options="marginTop:0;">
+        <div class="title-bar-left">
+            <h5 class="title-bar-title title">Property Hunter</h5><img class="logo"
+                src="../../public/assets/images/arrow.png" alt="bow icon">
+        </div>
+        <div class="title-bar-right">
+            <ul class="menu align-right">
+                <li><a class="headLink" href="/profile">Profile</a></li>
+                <li><a class="headLink" href="/investment">Investments</a></li>
+                <li><a class="headLink" href="/search">Search</a></li>
+                <li><a class="headLink" href="/">Home</a></li>
+                <li><a id="logout" class="headLink hide" href="/">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <form>
     <div class="grid-container formStyle">
         <div class="cell">
-            <h3 class="text-center profileHead">Search for a Property</h3>
+            <h3 class="text-center pageHead">Search for a Property</h3>
             <br>
             <div class="grid-x grid-padding-x">
                 <div class="medium-6 cell">
                     <label class="text-center">City
-                        <input type="text" placeholder="City">
+                        <input class="text-center" type="text" placeholder="City to Search">
                     </label>
                 </div>
                 <div class="medium-6 cell">
                     <label class="text-center">State
-                        <input type="text" placeholder="State">
-                    </label>
-                </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-                <div class="medium-6 cell">
-                    <label class="text-center">Radius
-                        <input type="text" placeholder="Radius">
-                    </label>
-                </div>
-                <div class="medium-6 cell">
-                    <div class="medium-6 cell">
-                        <label class="text-center">Bedrooms
-                            <input type="text" placeholder="Bedrooms">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-                <div class="medium-6 cell">
-                    <label class="text-center">Rental Strategy
-                        <input type="text" placeholder="Rental Strategy">
-                    </label>
-                </div>
-                <div class="medium-6 cell">
-                    <label class="text-center">Bathrooms
-                        <input type="text" placeholder="Bathrooms">
+                        <input class="text-center" type="text" placeholder="State to Search">
                     </label>
                 </div>
             </div>
@@ -46,3 +38,12 @@
         </div>
     </div>
 </form>
+<div class="grid-x grid-padding-x">
+    <div class="cell medium-8">
+        <div id="map" class="map hide"></div>
+    </div>
+    <div class="cell medium-4 listings-container"></div>
+</div>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>

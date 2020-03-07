@@ -18,7 +18,7 @@ module.exports = function (app) {
             res.json(result.data.content.properties);
             console.log(result.data.content.properties[0]);
         })
-        
+
     });
 }
 
