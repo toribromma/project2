@@ -1,14 +1,17 @@
-# project2
-<br>
+# Property Hunter (Project2)
+-------------------------------------------
 
-AS A potential rental host<br>
-I WANT TO find trends, rate & predictions on real estate<br>
-SO I CAN make informed decisions on my investments.<br>
-<br>
+Here's a link to the deployed page through Herkou: <br>
+https://dashboard.heroku.com/apps/propertyhunter90
 
+![Property Hunter - Project2 Screenshot](./public/assets/images/propertyhunter.png)
+-------------------------------------------
 
-Used Mashvisor API
-bcrypt, passport, hash for login authentication
-used node, express, mongoDB, javascript, jquery, foundation, material UI
+Our Project allows a real estate investor to easily buy property with predictions on trends, rates, and predictions. The investments can be traditional or air-bnb. 
 
-App displays rental property results using traditional and air bnb return investment rates
+<br><br>
+
+Team Members:<br>
+- Tori Bromma<br>
+- Jason Blake<br>
+- Brian Hernandez<br>
