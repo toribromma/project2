@@ -15,3 +15,15 @@ Team Members:<br>
 - Tori Bromma<br>
 - Jason Blake<br>
 - Brian Hernandez<br>
+
+
+## How to Start
+
+npm i
+
+npm start
+
+login: test1234@test.co
+password: password
+
+
