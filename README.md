@@ -2,7 +2,7 @@
 -------------------------------------------
 
 Here's a link to the deployed page through Herkou: <br>
-https://dashboard.heroku.com/apps/propertyhunter90
+https://propertyhunter90.herokuapp.com/logIn
 
 ![Property Hunter - Project2 Screenshot](./public/assets/images/propertyhunter.png)
 -------------------------------------------
